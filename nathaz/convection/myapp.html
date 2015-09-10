@@ -1,0 +1,42 @@
+<!-- This is the HTML file where you lay out your app window. -->
+<!-- Use normal HTML with Bootstrap, make sure the objects you want to control
+     have id attributes, and starting with a div as the outer level is probably
+     good. -->
+<!-- You can delete this comment once you've read it. -->
+
+<div>
+  <form>
+
+      <label>Thermal Expansion</label>
+      <input type="text" id="t_exp" value="32"/>
+      <label class="help-block">Units 1/K</label>
+
+      <label>Viscosity</label>
+      <input type="text" id="visc" value="32"/>
+      <label class="help-block">Units kg/s*m</label>
+
+      <label>Thermal Diffusivity</label>
+      <input type="text" id="t_diff" value="32"/>
+      <label class="help-block">Units m^2/s </label> 
+
+      <label>Temperature Difference from Top to Bottom</label>
+      <input type="text" id="delT" value="32"/>
+      <label class="help-block">Units K</label>
+
+      <label>Distance Scale</label>
+      <input type="text" id="delX" value="32"/>
+      <label class="help-block">Units m</label>
+
+     <label>Paramater Label</label>
+     <input type="text" id="label" value="My L"/>
+     <label class="help-block">Label for paramaters eg. Hurricane !</label>
+
+     <label>Rayleigh Number</label>
+     <input type="text" id="Ra" value="32"/>
+     <label class="help-block">Dimensionless !</label>
+     
+  </form>
+  <button id="btn_calculate" class="btn">Calculate</button>
+  <button id="btn_plot" class="btn">Plot</button>   
+  <img id="img_plot" data-visible="true"></img>
+</div>
